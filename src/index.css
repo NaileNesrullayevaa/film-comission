@@ -1,0 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::selection {
+    background: #ff1e004c;
+    text-shadow: none;
+}
