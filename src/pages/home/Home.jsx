@@ -37,10 +37,10 @@ const Home = () => {
         }
         return prev + 1;
       });
-    }, 10);
+    }, 4);
     return () => clearInterval(timer);
   }, []);
-
+  
   const [numberTwo, setNumberTwo] = useState(0);
   useEffect(() => {
     const timerTwo = setInterval(() => {
@@ -51,11 +51,11 @@ const Home = () => {
         }
         return prev + 1;
       });
-    }, 220);
+    }, 120);
     return () => clearInterval(timerTwo);
   }, []);
 
-  
+
   const [numberThree, setNumberThree] = useState(0);
   useEffect(() => {
     const timerThree = setInterval(() => {
@@ -66,7 +66,7 @@ const Home = () => {
         }
         return prev + 1;
       });
-    }, 200);
+    }, 120);
     return () => clearInterval(timerThree);
   }, []);
 
@@ -100,6 +100,21 @@ const Home = () => {
     }
     return () => clearInterval(intervalTwo);
   }, [indexTwo, textTwo, speedTwo]);
+
+  const [currentTextThree, setCurrentTextThree] = useState("");
+  const [textThree, setTextThree] = useState("Gallery");
+  const [indexThree, setIndexThree] = useState(0);
+  const speedThree = 100
+  useEffect(() => {
+    const intervalThree = setInterval(() => {
+      setCurrentTextThree(prev => prev + textThree[indexThree]);
+      setIndexThree(prev => prev + 1);
+    }, speedThree);
+    if (indexThree === textThree.length) {
+      clearInterval(intervalThree);
+    }
+    return () => clearInterval(intervalThree);
+  }, [indexThree, textThree, speedThree]);
 
   const [show, setShow] = useState(false)
   console.log(show)
@@ -251,7 +266,7 @@ const Home = () => {
       </section>
       <section className="gallery" id='gallery'>
         <div className="content">
-          <h1>Gallery</h1>
+          <h1>{currentTextThree}</h1>
           <motion.div className="boxes"
             initial={{ y: 40 }}
             whileInView={{ y: 0 }}

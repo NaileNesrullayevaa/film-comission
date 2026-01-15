@@ -891,6 +891,7 @@
                 grid-template-columns: repeat(1, 1fr);
                 gap: 12px;
                 margin-bottom: 20px;
+                height: auto;
             }
 
             .two {
@@ -898,6 +899,7 @@
                 grid-template-columns: 12fr;
                 gap: 12px;
                 margin-bottom: 20px;
+                height: auto;
             }
 
             .three {
@@ -905,6 +907,7 @@
                 grid-template-columns: repeat(1, 1fr);
                 gap: 12px;
                 margin-bottom: 20px;
+                height: auto;
             }
 
             .four {
@@ -912,6 +915,7 @@
                 grid-template-columns: 12fr;
                 gap: 12px;
                 margin-bottom: 20px;
+                height: auto;
 
             }
 
@@ -1242,7 +1246,7 @@
         padding-bottom: 120px;
 
         .content {
-            width: 80%;
+            width: 70%;
             margin: auto;
 
             h1 {
@@ -1262,6 +1266,7 @@
                 grid-template-columns: repeat(2, 1fr);
                 gap: 12px;
                 margin-bottom: 20px;
+                height: auto;
             }
 
             .two {
@@ -1269,6 +1274,7 @@
                 grid-template-columns: 12fr 12fr 12fr;
                 gap: 12px;
                 margin-bottom: 20px;
+                height: auto;
             }
 
             .three {
@@ -1276,6 +1282,7 @@
                 grid-template-columns: repeat(1, 1fr);
                 gap: 12px;
                 margin-bottom: 20px;
+                height: auto;
             }
 
             .four {
@@ -1283,6 +1290,7 @@
                 grid-template-columns: 6fr 6fr;
                 gap: 12px;
                 margin-bottom: 20px;
+                height: auto;
 
             }
 
@@ -1602,9 +1610,21 @@
                 font-size: 55px;
                 margin-bottom: 40px;
             }
+            .one{
+                height: auto;
+            }
+            .two{
+                height: auto;
+            }
+            .three{
+                height: auto;
+            }
+            .four{
+                height: auto;
+            }
 
             .img-box {
-                height: 370px;
+                // height: 370px;
 
                 img {
                     width: 100%;
@@ -2130,6 +2150,18 @@
     .gallery{
         .content{
             width: 80%;
+            .one{
+                height: auto;
+            }
+            .two{
+                height: auto;
+            }
+            .three{
+                height: auto;
+            }
+            .four{
+                height: auto;
+            }
         }
     }
     .table {
@@ -2184,76 +2216,6 @@
             padding-right: 20px;
         }
     }
-
-    // .service {
-    //     position: relative;
-    //     display: flex;
-    //     align-items: center;
-    //     justify-content: center;
-    //     height: 100vh;
-    //     padding-left: 20px;
-    //     padding-right: 20px;
-
-    //     h1 {
-    //         padding-top: 50px;
-    //         position: absolute;
-    //         font-size: 230px;
-    //         font-weight: 700;
-    //         text-transform: uppercase;
-    //         font-family: Oswald;
-    //         color: #ddb995;
-    //         opacity: 0.2;
-    //         text-align: center;
-    //         line-height: 0.9;
-    //         z-index: 0;
-
-    //         span {
-    //             display: block;
-    //         }
-    //     }
-
-    //     .text {
-    //         z-index: 1;
-    //         margin-top: 250px;
-
-    //         h2 {
-    //             margin-bottom: 28px;
-    //             font-family: Oswald;
-    //             font-weight: bold;
-    //             font-size: 56px;
-    //             text-align: center;
-    //             margin-top: 50px;
-
-    //         }
-
-    //         .boxes {
-    //             display: grid;
-    //             grid-template-columns: repeat(3, 1fr);
-    //             gap: 20px;
-
-    //             .box {
-    //                 background-color: #6F6F6F;
-    //                 display: flex;
-    //                 align-items: center;
-    //                 justify-content: center;
-    //                 height: 238px;
-    //                 padding-left: 20px;
-    //                 padding-right: 20px;
-    //                 transition: 0.5s;
-
-    //                 &:hover {
-    //                     background-color: #915921;
-    //                 }
-
-    //                 p {
-    //                     color: #fff;
-    //                     font-size: 22px;
-    //                     font-family: Oswald;
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
 
     .done {
         padding-top: 90px;
